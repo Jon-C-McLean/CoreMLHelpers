@@ -124,7 +124,7 @@ extension CGImage {
   */
   public static func create(pixelBuffer: CVPixelBuffer) -> CGImage? {
     var cgImage: CGImage?
-    VTCreateCGImageFromCVPixelBuffer(pixelBuffer, options: nil, imageOut: &cgImage)
+    VTCreateCGImageFromCVPixelBuffer(pixelBuffer, nil, &cgImage)
     return cgImage
   }
 
